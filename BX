@@ -1,0 +1,488 @@
+-- library ui
+
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/master/source.lua", true))()
+
+local Window = Luna:CreateWindow({
+	Name = "Rox, The Snow King", -- This Is Title Of Your Window
+	Subtitle = Snow, -- A Gray Subtitle next To the main title.
+	LogoID = "82795327169782", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
+	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
+	LoadingTitle = "Luna Interface Suite", -- Header for loading screen
+	LoadingSubtitle = "by Nebula Softworks", -- Subtitle for loading screen
+
+	ConfigSettings = {
+		RootFolder = nil, -- The Root Folder Is Only If You Have A Hub With Multiple Game Scripts and u may remove it. DO NOT ADD A SLASH
+		ConfigFolder = "Big Hub" -- The Name Of The Folder Where Luna Will Store Configs For This Script. DO NOT ADD A SLASH
+	},
+
+	KeySystem = false, -- As Of Beta 6, Luna Has officially Implemented A Key System!
+	KeySettings = {
+		Title = "Luna Example Key",
+		Subtitle = "Key System",
+		Note = "Best Key System Ever! Also, Please Use A HWID Keysystem like Pelican, Luarmor etc. that provide key strings based on your HWID since putting a simple string is very easy to bypass",
+		SaveInRoot = false, -- Enabling will save the key in your RootFolder (YOU MUST HAVE ONE BEFORE ENABLING THIS OPTION)
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		Key = {"Example Key"}, -- List of keys that will be accepted by the system, please use a system like Pelican or Luarmor that provide key strings based on your HWID since putting a simple string is very easy to bypass
+		SecondAction = {
+			Enabled = true, -- Set to false if you do not want a second action,
+			Type = "Link", -- Link / Discord.
+			Parameter = "" -- If Type is Discord, then put your invite link (DO NOT PUT DISCORD.GG/). Else, put the full link of your key system here.
+		}
+	}
+})
+
+-- Tabs
+
+local BlueTab = Window:CreateTab({
+	Name = "Blue, The Penguin",
+	Icon = "code-xml",
+	ImageSource = "Lucide",
+	ShowTitle = true -- This will determine whether the big header text in the tab will show
+})
+
+local RoxTab = Window:CreateTab({
+	Name = "Rox, The Snow King",
+	Icon = "club",
+	ImageSource = "Lucide",
+	ShowTitle = true -- This will determine whether the big header text in the tab will show
+})
+
+local RexTab = Window:CreateTab({
+	Name = "Rex, The Magician",
+	Icon = "code",
+	ImageSource = "Lucide",
+	ShowTitle = true -- This will determine whether the big header text in the tab will show
+})
+
+-- Sections
+
+BlueTab:CreateSection("Mr. Blue")
+
+RoxTab:CreateSection("Rox")
+
+RexTab:CreateSection("Rex")
+
+-- Buttons
+
+local Button = BlueTab:CreateButton({
+    Name = "IY",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Fly",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZxLiHtYN"))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Fly [ADMIN]",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))();
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "rochips universal",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/randomstring0/Qwerty/main/qwerty4'),true))();
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Fly Gui V4",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TheBlue5/My-scripts/refs/heads/main/Fly%20Gui%20V4"))();
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Vfly V2",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui'))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Vfly XX V2",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Fe%20Vehicle%20Fly%20GUI%20script'))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Vfly XX Old",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBlue5/Fe-Vehicle-Fly-GUI-script/refs/heads/main/Vfly'))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Vfly XZ",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TheBlue5/VFLY-XZ/refs/heads/main/VFLY"))();
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Vfly V4",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/ZgKQ0TEA'),true))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "Fling speed 🥏",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "🐎🐎🐎",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/9menta/Archives/refs/heads/main/ElixirClient.lua",true))();
+    end
+})
+
+local Button = BlueTab:CreateButton({
+    Name = "🐎🪙",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/WiL3fChb"))()
+    end
+})
+
+-- Rox
+
+local Button = RoxTab:CreateButton({
+    Name = "✅",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "✈️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZxLiHtYN"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "✈️ 2",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))();
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "✈️ 3",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/ZgKQ0TEA'),true))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "✈️🚗",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui'))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "✈️ V4",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TheBlue5/My-scripts/refs/heads/main/Fly%20Gui%20V4"))();
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "💃",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/randomstring0/Qwerty/main/qwerty4'),true))();
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🟩",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "⬜",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/TjjnpCM1"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🔴",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🐎🐎🐎",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DHBCommunity/DHBOfficialScript/main/westyourballz"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "💃💃💃 ",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "💃💃3",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGetAsync("https://mark-hub-h2g9.onrender.com/raw/Fe%20All%20Emotes.lua=446d7afc"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "mm2👁️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/CMN1fPhw'),true))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🏡🏡🏡",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🕷️🕷️🕷️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🧍🧍🧍",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://scriptblox.com/raw/FE-Animation-Changer_217"))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🔨🔨🔨",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🐎🐎🐎",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/9menta/Archives/refs/heads/main/ElixirClient.lua",true))();
+    end
+})
+
+local Button = RoxTab:CreateButton({
+    Name = "🐎🪙",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/WiL3fChb"))()
+    end
+})
+
+-- Rex
+
+local Button = RexTab:CreateButton({
+    Name = "✅",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "✈️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZxLiHtYN"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "✈️ 2",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))();
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "💃",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/randomstring0/Qwerty/main/qwerty4'),true))();
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🟩",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "⬜",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/TjjnpCM1"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🔴",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🐎🐎🐎",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DHBCommunity/DHBOfficialScript/main/westyourballz"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "💃💃💃 ",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "💃💃3",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGetAsync("https://mark-hub-h2g9.onrender.com/raw/Fe%20All%20Emotes.lua=446d7afc"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "mm2👁️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBlue5/Mm2-ESP/refs/heads/main/Mm2%20ESP.lua'))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🏡🏡🏡",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🕷️🕷️🕷️",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🧍🧍🧍",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://scriptblox.com/raw/FE-Animation-Changer_217"))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🔨🔨🔨",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🐎🐎🐎",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/9menta/Archives/refs/heads/main/ElixirClient.lua",true))();
+    end
+})
+
+local Button = RexTab:CreateButton({
+    Name = "🐎🪙",
+    Description = nil,
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://pastebin.com/raw/WiL3fChb"))()
+    end
+})
+
+-- Key
+
+
+local Bind = BlueTab:CreateBind({
+	Name = "Key",
+	Description = nil,
+	CurrentBind = "K", -- Changed from Q to K
+	HoldToInteract = false, -- When true, Instead of toggling, You hold to achieve the active state of the Bind
+	Callback = function(BindState)
+		-- The function that takes place when the keybind is pressed
+		-- The variable (BindState) is a boolean for whether the Bind is being held or not (HoldToInteract needs to be true) OR it is whether the Bind is active
+	end,
+
+	OnChangedCallback = function(Bind)
+		-- The function that takes place when the binded key changes
+		-- The variable (Bind) is a Enum.KeyCode for the new Binded Key
+	end,
+}, "Bind") -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
