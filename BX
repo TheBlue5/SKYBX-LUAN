@@ -35,22 +35,22 @@ local Window = Luna:CreateWindow({
 
 local BlueTab = Window:CreateTab({
 	Name = "Blue, The Penguin",
-	Icon = "code-xml",
-	ImageSource = "Lucide",
+	Icon = "view_in_ar",
+	ImageSource = "Material",
 	ShowTitle = true -- This will determine whether the big header text in the tab will show
 })
 
 local RoxTab = Window:CreateTab({
 	Name = "Rox, The Snow King",
-	Icon = "club",
-	ImageSource = "Lucide",
+	Icon = "view_in_ar",
+	ImageSource = "Material",
 	ShowTitle = true -- This will determine whether the big header text in the tab will show
 })
 
 local RexTab = Window:CreateTab({
 	Name = "Rex, The Magician",
-	Icon = "code",
-	ImageSource = "Lucide",
+	Icon = "view_in_ar",
+	ImageSource = "Material",
 	ShowTitle = true -- This will determine whether the big header text in the tab will show
 })
 
@@ -262,7 +262,7 @@ local Button = RoxTab:CreateButton({
     Name = "💃💃💃 ",
     Description = nil,
     Callback = function(Value)
-        loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free-emote/refs/heads/main/Delta%20mad%20stuffs"))()
     end
 })
 
@@ -400,7 +400,7 @@ local Button = RexTab:CreateButton({
     Name = "💃💃💃 ",
     Description = nil,
     Callback = function(Value)
-        loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free-emote/refs/heads/main/Delta%20mad%20stuffs"))()
     end
 })
 
